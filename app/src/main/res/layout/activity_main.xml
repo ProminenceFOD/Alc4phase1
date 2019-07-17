@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Welcome to Alc 4.0"
+      android:textSize="40sp"
+      android:textStyle="bold"
+      android:layout_marginTop="40dp"
+      android:layout_marginLeft="30dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+      <Button
+          android:onClick="about"
+          android:id="@+id/about"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="ABOUT ALC"
+          android:textSize="30sp"
+          style="@style/TextAppearance.AppCompat.Button"/>
+
+      <Button
+          android:onClick="profile"
+          android:id="@+id/profile"
+          android:layout_marginTop="30dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="MY PROFILE"
+          android:textSize="30sp"/>
+
+    </LinearLayout>
+</RelativeLayout>
